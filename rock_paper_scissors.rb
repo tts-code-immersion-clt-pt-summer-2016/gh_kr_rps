@@ -9,11 +9,11 @@ until score.abs > 5
     choice_id = options.index(choice)
     op_choice = options.sample
     if choice == op_choice
-      # Tie
-    elsif choice == victor
-      # Win
+      score += 0
+    elsif choice == victors[choice_id]
+      score += 1
     else
-      #Loss
-    end  
+      score += -1
+    end
   end
 end
