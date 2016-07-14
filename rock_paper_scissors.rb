@@ -3,9 +3,10 @@
 # For TTS Code Immersion, Part-Time, Summer 2016
 
 def player_wins?(player_choice, comp_choice)
-  # Returns true if player wins
-  # and false if computer wins
-  return true
+  bool = (player_choice == "rock" && comp_choice == "scissors") ||
+         (player_choice == "scissors" && comp_choice == "paper") ||
+         (player_choice == "paper" && comp_choice == "rock")
+  return bool
 end
 
 def play_rps(max_score)
