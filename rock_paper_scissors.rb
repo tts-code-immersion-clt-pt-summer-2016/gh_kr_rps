@@ -1,3 +1,7 @@
+# Rock Paper Scissors Program
+# By Gerrick Hilliard and Kevin Rocker
+# For TTS Code Immersion, Part-Time, Summer 2016
+
 def player_wins?(player_choice, comp_choice)
   # Returns true if player wins
   # and false if computer wins
