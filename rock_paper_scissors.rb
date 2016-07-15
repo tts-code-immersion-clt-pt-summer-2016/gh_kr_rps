@@ -33,4 +33,8 @@ def play_rps(max_score)
 end
 
 final_result = play_rps(2)
-puts "Final score is: #{final_result}"
+if final_result > 0
+  puts "Congratulations! Your final score is #{final_result}."
+else
+  puts "I'm sorry, the computer reached a score of #{final_result.abs} first."
+end
